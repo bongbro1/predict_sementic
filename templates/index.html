@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="/static/icon.png" type="image/x-icon">
+
+    <title>Phân Tích Cảm Xúc</title>
+    
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg">
+    <div id="preloader" class="preloader">
+        <div class="spinner-border" role="status">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box_container">
+            <div class="text-container">
+                <h1 class="waving-title">
+                    <span>P</span>
+                    <span>h</span>
+                    <span>â</span>
+                    <span>n</span>
+                    <span> </span>
+                    <span>T</span>
+                    <span>í</span>
+                    <span>c</span>
+                    <span>h</span>
+                    <span> </span>
+                    <span>C</span>
+                    <span>ả</span>
+                    <span>m</span>
+                    <span> </span>
+                    <span>X</span>
+                    <span>ú</span>
+                    <span>c</span>
+                </h1>
+            </div>
+            
+            
+    
+            <textarea id="inputText" class="inputText" placeholder="Nhập văn bản để phân tích..."></textarea>
+            <button class="btn" id="analyzeButton">Phân tích</button>
+            <div class="box">
+                <div id="result"></div>
+            </div>            
+
+            <h2 class="title">Hoặc thu âm giọng nói để phân tích</h2>
+            <button class="btn" id="recordButton">Bắt đầu thu âm</button>
+            <hr>
+            <h2 class="title title_sugget_activities">Gợi ý hoạt động</h2>
+        </div>
+        <div id="activitySuggestions" class="activitySuggestions"></div>
+    </div>
+
+    <script type="module" src="/static/js/script.js"></script>
+    
+</body>
+</html>
