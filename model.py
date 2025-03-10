@@ -22,7 +22,7 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 
 # Bước 1: Tải dữ liệu
-df = pd.read_csv('data/data2.csv')
+df = pd.read_csv('data/merged_data.csv')
 
 # Bước 2: Mã hóa nhãn cảm xúc thành số
 label_encoder = LabelEncoder()

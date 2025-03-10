@@ -44,19 +44,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Màu nền với độ trong suốt */
-    z-index: 9999; /* Đặt ở trên cùng */
-    visibility: hidden; /* Ẩn khi không cần thiết */
-}
+
 
 .spinner-border {
     width: 3rem;
@@ -211,48 +199,30 @@ h1 {
     transform: translateY(-2px);
 }
 
-/*phao hoa*/
-/* Container của pháo hoa */
-.firework {
+
+/* firework */
+
+
+  canvas {
     position: fixed;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-}
-
-/* Các hạt pháo hoa */
-.particle {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Thêm vệt sáng cho hình tròn */
-    animation: explode 1.5s ease-out forwards;
-    opacity: 1; /* Bắt đầu với độ mờ 100% */
-}
-
-
-/* Hiệu ứng nổ */
-@keyframes explode {
-    0% {
-        transform: translate(0, 0) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(var(--x), var(--y)) scale(0.5);
-        opacity: 0;
-    }
-}
-body {
-    position: relative;
-}
-.trail {
-    position: absolute;
-    width: 2px; /* Độ rộng của vệt */
-    height: 100px; /* Chiều dài của vệt */
-    background-color: red; /* Màu của vệt */
-    animation: moveUp 2s ease-in forwards; /* Hiệu ứng di chuyển lên trên */
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
+    z-index: 0; /* Đặt canvas phía sau */
+    opacity: 0.15;
+    pointer-events: none; /* Để không chặn các tương tác của người dùng với nội dung khác */
+  }
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(154, 154, 154, 0.245); /* Màu nền với độ trong suốt */
+    z-index: 0; /* Đặt ở trên cùng */
+    visibility: hidden; /* Ẩn khi không cần thiết */
 }
-
